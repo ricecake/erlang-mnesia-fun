@@ -5,6 +5,7 @@
 %% API
 -export([start_link/0]).
 
+-compile({crud}).
 %% Supervisor callbacks
 -export([init/1]).
 
@@ -22,6 +23,9 @@ start_link() ->
 %% Supervisor callbacks
 %% ===================================================================
 
+%doSetup() -> crud:setup(table, [one, two, three], []).
+
 init([]) ->
+crud:setup(table, [one, two, three], []),
     {ok, { {one_for_one, 5, 10}, []} }.
 
