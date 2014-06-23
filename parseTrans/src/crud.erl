@@ -23,34 +23,6 @@ repAttr(Name, [{attribute, _, Name, _} = Node| Rest], ASTOut, Trans) ->
 repAttr(Name, [Node|Rest], ASTOut, Trans) -> repAttr(Name, Rest, [Node|ASTOut], Trans).
 
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
 setup({Table, Fields, Properties})->% when is_atom(Table)  andalso
                                      %   is_list(Fields) andalso
                                       %  is_list(Properties) ->
